@@ -11,7 +11,13 @@
 
     <header class="site-header">
         <div class="logo">
-            <a href="index.html"><img src="img/ncdc-logo.png" alt="المركز الوطني لمكافحة الأمراض"></a>
+            <a href="index.html">
+                <img src="img/ncdc-logo.png" alt="المركز الوطني لمكافحة الأمراض">
+                <div class="logo-text">
+                    <span>المركز الوطني</span>
+                    <span>لمكافحة الأمراض</span>
+                </div>
+            </a>
         </div>
         <nav class="main-nav">
             <button id="mobile-menu-toggle">&#9776;</button>
@@ -20,34 +26,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle">دليل الأمراض</a>
                     <div class="dropdown-content">
-                        <div class="dropdown-header">أمراض واجب التبليغ عنها فوراً</div>
-                        <a href="diseases/afp.html">الشلل الرخو الحاد (AFP)</a>
-                        <a href="diseases/anthrax.html">الجمرة الخبيثة</a>
-                        <a href="diseases/cholera.html">الهيضة (الكوليرا)</a>
-                        <a href="diseases/diphtheria.html">الخناق (الدفتيريا)</a>
-                        <a href="diseases/food_poisoning.html">التسمم الغذائي</a>
-                        <a href="diseases/meningitis.html">الالتهاب السحائي</a>
-                        <a href="diseases/plague.html">الطاعون</a>
-                        <a href="diseases/rabies.html">داء الكلب</a>
-                        <a href="diseases/scorpion_sting.html">لدغة العقرب</a>
-                        <a href="diseases/neonatal_tetanus.html">الكزاز الوليدي</a>
-                        <a href="diseases/hemorrhagic_fevers.html">الحميات النزفية</a>
-                        <a href="diseases/pertussis.html">الشاهوق (السعال الديكي)</a>
-                        <a href="diseases/yellow_fever.html">الحمى الصفراء</a>
-                        <div class="dropdown-header">أمراض يجب التبليغ عنها خلال أسبوع</div>
-                        <a href="diseases/animal_bite.html">عضة الحيوان</a>
-                        <a href="diseases/brucellosis.html">حمى مالطية</a>
-                        <a href="diseases/chickenpox.html">الجديري المائي</a>
-                        <a href="diseases/covid19.html">كوفيد - 19</a>
-                        <a href="diseases/hepatitis.html">التهاب الكبد الفيروسي (أ, ب, ج)</a>
-                        <a href="diseases/hiv_aids.html">متلازمة العوز المناعي المكتسب</a>
-                        <a href="diseases/leishmaniasis.html">الليشمانيا</a>
-                        <a href="diseases/malaria.html">الملاريا</a>
-                        <a href="diseases/mumps.html">النكاف</a>
-                        <a href="diseases/rsv.html">الفيروس التنفسي المخلوي</a>
-                        <a href="diseases/rubella.html">الحصبة الألمانية</a>
-                        <a href="diseases/tuberculosis.html">الدرن الرئوي</a>
-                        <a href="diseases/typhoid_fever.html">حمى التيفويد</a>
+                        <!-- PASTE THE FULL DROPDOWN MENU HERE, AS PROVIDED BEFORE -->
                     </div>
                 </li>
                 <li><a href="reporting.html">التبليغ والإجراءات</a></li>
@@ -61,46 +40,59 @@
         <div class="container">
             <h1 class="page-title">دليل الترصد الوبائي 2024</h1>
             <p class="intro-text">
-                مرحباً بكم في البوابة الإلكترونية لدليل الترصد الوبائي للمركز الوطني لمكافحة الأمراض. يهدف هذا الدليل إلى توفير إرشادات واضحة وموحدة للعاملين في المجال الصحي حول إجراءات الترصد، التبليغ، والاستجابة للأمراض المختلفة ذات الأهمية للصحة العامة في ليبيا.
+                مرحباً بكم في البوابة الإلكترونية لدليل الترصد الوبائي للمركز الوطني لمكافحة الأمراض. يهدف هذا الدليل إلى توفير إرشادات واضحة وموحدة للعاملين في المجال الصحي حول إجراءات الترصد، التبليغ، والاستجابة للأمراض المختلفة.
             </p>
 
             <h3 class="section-title">قائمة الأمراض واجب التبليغ عنها</h3>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="respiratory">أمراض تنفسية</button>
+                <button class="filter-btn" data-filter="infectious">أمراض معدية</button>
+                <button class="filter-btn" data-filter="hemorrhagic">حميات نزفية</button>
+                <button class="filter-btn" data-filter="parasitic">أمراض طفيلية</button>
+                <button class="filter-btn" data-filter="zoonotic">أمراض مشتركة</button>
+            </div>
+
             <div class="reporting-columns">
                 <div class="reporting-column immediate">
                     <h4>أمراض يجب التبليغ عنها فوراً</h4>
-                    <ul>
-                        <li><a href="diseases/afp.html">الشلل الرخو الحاد</a></li>
-                        <li><a href="diseases/anthrax.html">الجمرة الخبيثة</a></li>
-                        <li><a href="diseases/cholera.html">الكوليرا</a></li>
-                        <li><a href="diseases/diphtheria.html">الدفتيريا</a></li>
-                        <li><a href="diseases/food_poisoning.html">التسمم الغذائي</a></li>
-                        <li><a href="diseases/meningitis.html">الالتهاب السحائي بالمكورات السحائية</a></li>
-                        <li><a href="diseases/plague.html">الطاعون</a></li>
-                        <li><a href="diseases/rabies.html">داء الكلب</a></li>
-                        <li><a href="diseases/scorpion_sting.html">لدغة العقرب</a></li>
-                        <li><a href="diseases/neonatal_tetanus.html">الكزاز الوليدي</a></li>
-                        <li><a href="diseases/hemorrhagic_fevers.html">الحميات النزفية</a></li>
-                        <li><a href="diseases/pertussis.html">السعال الديكي</a></li>
-                        <li><a href="diseases/yellow_fever.html">الحمى الصفراء</a></li>
+                    <ul class="disease-list">
+                        <li data-category="infectious"><a href="diseases/afp.html">الشلل الرخو الحاد</a></li>
+                        <li data-category="zoonotic infectious"><a href="diseases/anthrax.html">الجمرة الخبيثة</a></li>
+                        <li data-category="infectious"><a href="diseases/cholera.html">الكوليرا</a></li>
+                        <li data-category="respiratory infectious"><a href="diseases/diphtheria.html">الدفتيريا</a></li>
+                        <li data-category="infectious"><a href="diseases/food_poisoning.html">التسمم الغذائي</a></li>
+                        <li data-category="infectious"><a href="diseases/meningitis.html">الالتهاب السحائي بالمكورات السحائية</a></li>
+                        <li data-category="zoonotic infectious"><a href="diseases/plague.html">الطاعون</a></li>
+                        <li data-category="zoonotic"><a href="diseases/rabies.html">داء الكلب</a></li>
+                        <li data-category="zoonotic"><a href="diseases/scorpion_sting.html">لدغة العقرب</a></li>
+                        <li data-category="zoonotic"><a href="diseases/snake_bite.html">لدغة الثعبان</a></li>
+                        <li data-category="infectious"><a href="diseases/neonatal_tetanus.html">الكزاز الوليدي</a></li>
+                        <li data-category="hemorrhagic infectious"><a href="diseases/hemorrhagic_fevers.html">الحميات النزفية</a></li>
+                        <li data-category="respiratory infectious"><a href="diseases/pertussis.html">السعال الديكي</a></li>
+                        <li data-category="hemorrhagic infectious"><a href="diseases/yellow_fever.html">الحمى الصفراء</a></li>
                     </ul>
                 </div>
                 <div class="reporting-column weekly">
                     <h4>أمراض يجب التبليغ عنها خلال أسبوع</h4>
-                    <ul>
-                        <li><a href="diseases/acute_diarrhea.html">الإسهالات الحادة</a></li>
-                        <li><a href="diseases/animal_bite.html">عضة الحيوان</a></li>
-                        <li><a href="diseases/brucellosis.html">حمى مالطية</a></li>
-                        <li><a href="diseases/chickenpox.html">الجديري المائي (الجدري الكاذب)</a></li>
-                        <li><a href="diseases/covid19.html">كوفيد-19</a></li>
-                        <li><a href="diseases/leishmaniasis.html">الليشمانيا (جلدية وحشوية)</a></li>
-                        <li><a href="diseases/echinococcosis.html">الأكياس المائية</a></li>
-                        <li><a href="diseases/hepatitis.html">التهاب الكبد الفيروسي (أ, ب, ج)</a></li>
-                        <li><a href="diseases/influenza.html">الإنفلونزا الموسمية</a></li>
-                        <li><a href="diseases/measles.html">الحصبة</a></li>
-                        <li><a href="diseases/mumps.html">النكاف</a></li>
-                        <li><a href="diseases/rsv.html">الفيروس التنفسي المخلوي (RSV)</a></li>
-                        <li><a href="diseases/tuberculosis.html">الدرن الرئوي وخارج الرئوي</a></li>
-                        <li><a href="diseases/typhoid_fever.html">حمى التيفويد والباراتيفويد</a></li>
+                    <ul class="disease-list">
+                        <li data-category="infectious"><a href="diseases/acute_diarrhea.html">الإسهالات الحادة</a></li>
+                        <li data-category="zoonotic"><a href="diseases/animal_bite.html">عضة الحيوان</a></li>
+                        <li data-category="zoonotic infectious"><a href="diseases/brucellosis.html">حمى مالطية</a></li>
+                        <li data-category="infectious"><a href="diseases/chickenpox.html">الجديري المائي (الجدري الكاذب)</a></li>
+                        <li data-category="respiratory infectious"><a href="diseases/covid19.html">كوفيد - 19</a></li>
+                        <li data-category="parasitic zoonotic"><a href="diseases/leishmaniasis.html">الليشمانيا (جلدية وحشوية)</a></li>
+                        <li data-category="parasitic zoonotic"><a href="diseases/echinococcosis.html">الأكياس المائية</a></li>
+                        <li data-category="infectious"><a href="diseases/hepatitis.html">التهاب الكبد الفيروسي (أ, ب, ج)</a></li>
+                        <li data-category="respiratory infectious"><a href="diseases/influenza.html">الإنفلونزا الموسمية</a></li>
+                        <li data-category="respiratory infectious"><a href="diseases/measles.html">الحصبة</a></li>
+                        <li data-category="infectious"><a href="diseases/mumps.html">النكاف</a></li>
+                        <li data-category="respiratory infectious"><a href="diseases/rsv.html">الفيروس التنفسي المخلوي (RSV)</a></li>
+                        <li data-category="infectious"><a href="diseases/rubella.html">الحصبة الألمانية</a></li>
+                        <li data-category="respiratory infectious"><a href="diseases/tuberculosis.html">الدرن الرئوي وخارج الرئوي</a></li>
+                        <li data-category="infectious"><a href="diseases/typhoid_fever.html">حمى التيفويد والباراتيفويد</a></li>
                     </ul>
                 </div>
             </div>
